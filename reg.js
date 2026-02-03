@@ -17,7 +17,7 @@ document.getElementById("registerBtn").addEventListener("click", () => {
 
   if(localStorage.getItem("user_" + name)) {
     alert("User already exists! Please login.");
-    window.location.href = "loger.html";
+    window.location.href = "index.html";
     return;
   }
   const dob = document.getElementById("regDOB").value.trim();
@@ -40,5 +40,5 @@ localStorage.setItem("userDOB_" + name, dob);
   localStorage.setItem("userAddress_" + name, address);
 
   alert("Registration successful! Please login.");
-  window.location.href = "loger.html";
+  window.location.href = "index.html";
 });
